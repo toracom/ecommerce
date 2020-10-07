@@ -1,0 +1,83 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem;
+} */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2f2f2f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ------- */
+
+p.pd_name {
+    font-size: 1.2rem;
+    color: #191919;
+}
+
+p.pd_price {
+    color: chocolate;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#seemore {
+    margin-top: 2.8rem;
+}
+
+/* input */
+
+.light-blue-skin input[type="email"]:focus:not([readonly]),
+.light-blue-skin input[type="text"]:focus:not([readonly]),
+.light-blue-skin input[type="password"]:focus:not([readonly]),
+.light-blue-skin input[type="number"]:focus:not([readonly]),
+.light-blue-skin textarea.md-textarea:focus:not([readonly]) {
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-color: #1f89e5;
+    box-shadow: 0 0 0 3px #ced4da;
+}
+
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.md-form input:not([type]),
+.md-form input[type="text"]:not(.browser-default),
+.md-form input[type="password"]:not(.browser-default),
+.md-form input[type="email"]:not(.browser-default),
+.md-form input[type="url"]:not(.browser-default),
+.md-form input[type="time"]:not(.browser-default),
+.md-form input[type="date"]:not(.browser-default),
+.md-form input[type="datetime"]:not(.browser-default),
+.md-form input[type="datetime-local"]:not(.browser-default),
+.md-form input[type="tel"]:not(.browser-default),
+.md-form input[type="number"]:not(.browser-default),
+.md-form input[type="search"]:not(.browser-default),
+.md-form input[type="phone"]:not(.browser-default),
+.md-form input[type="search-md"],
+.md-form textarea.md-textarea {
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
+.select-wrapper span.caret {
+    right: 1rem;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <% include ../layouts/meta.ejs %>
+    <% include ../layouts/style.ejs %>
+    <link rel="stylesheet" href="/addon/smart-photo/css/smartphoto.min.css">
+    <!-- <link rel="stylesheet" href="/addon/smart-photo/css/style.css"> -->
+    <style>
+        body {
+    background-color: #7B1FA2
+}
+
+.container {
+    margin-top: 100px;
+    margin-bottom: 100px
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%
+}
+
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+    width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+    display: block;
+    opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+.carousel-item img {
+    width: 80%
+}
+    </style>
+</head>
+
+<body>
+    <% include ../layouts/navbar.ejs %>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="https://i.imgur.com/weXVL8M.jpg" alt="Hills"> </div>
+                            <div class="carousel-item"> <img src="https://i.imgur.com/Rpxx6wU.jpg" alt="Hills"> </div>
+                            <div class="carousel-item"> <img src="https://i.imgur.com/83fandJ.jpg" alt="Hills"> </div>
+                            <div class="carousel-item"> <img src="https://i.imgur.com/JiQ9Ppv.jpg" alt="Hills"> </div>
+                        </div> <!-- Left right --> <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#custCarousel" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="https://i.imgur.com/weXVL8M.jpg" class="img-fluid"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="https://i.imgur.com/Rpxx6wU.jpg" class="img-fluid"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="https://i.imgur.com/83fandJ.jpg" class="img-fluid"> </a> </li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="3" data-target="#custCarousel"> <img src="https://i.imgur.com/JiQ9Ppv.jpg" class="img-fluid"> </a> </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="masonry">
+            <div class="brick">
+                <a href="/images/product/item_001.png" class="js-img-viewer">
+                    <img src="/images/product/item_001.png" alt="" width="360" />
+                </a>
+            </div>
+            <div class="brick">
+                <a href="/images/product/item_001.png" class="js-img-viewer">
+                    <img src="/images/product/item_001.png" alt="" width="360" />
+                </a>
+            </div>
+            <div class="brick">
+                <a href="/images/product/item_001.png" class="js-img-viewer">
+                    <img src="/images/product/item_001.png" alt="" width="360" />
+                </a>
+            </div>
+            <div class="brick">
+                <a href="/images/product/item_001.png" class="js-img-viewer">
+                    <img src="/images/product/item_001.png" alt="" width="360" />
+                </a>
+            </div>
+            <div class="brick">
+                <a href="/images/product/item_001.png" class="js-img-viewer">
+                    <img src="/images/product/item_001.png" alt="" width="360" />
+                </a>
+            </div>
+            <div class="brick">
+                <a href="/images/product/item_001.png" class="js-img-viewer">
+                    <img src="/images/product/item_001.png" alt="" width="360" />
+                </a>
+            </div>
+        </div> -->
+    </main>
+    <% include ../layouts/footer.ejs %>
+    <% include ../layouts/cart.ejs %>
+    <% include ../layouts/script.ejs %>
+    <!-- <script src="/addon/smart-photo/js/jquery-smartphoto.min.js?v=1"></script>
+    <script>
+        $(function () {
+            $(".js-img-viewer").SmartPhoto();
+        });
+    </script> -->
+</body>
+
+</html>

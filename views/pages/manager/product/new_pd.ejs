@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <% include ../../../layouts/meta.ejs %>
+  <% include ../../../layouts/style.ejs %>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+</head>
+
+<body class="fixed-sn light-blue-skin">
+    <% include ../../../layouts/navbar_admin.ejs %>
+  <main>
+    <div class="container-fluid mt-5">
+        <% include ../../../additional/manager/product/new_pd.ejs %>
+      </div>
+  </main>
+  <% include ../../../layouts/footer.ejs %>
+  <% include ../../../layouts/script.ejs %>
+</body>
+
+</html>

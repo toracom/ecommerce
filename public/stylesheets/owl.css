@@ -1,0 +1,55 @@
+button.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+button.owl-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.owl_nav {
+    color: white;
+    font-size: 2rem;
+}
+
+.owl-banner .owl-dots {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.owl-nav button {
+    background-color: transparent !important;
+}
+
+.owl-carousel .owl-item img {
+    object-fit: cover;
+}
+
+.owl-banner {
+    padding-top: 3.4rem;
+}
+
+.owl-product .card {
+    margin: 1rem;
+}
+
+.owl_pd_nav {
+    font-size: 1.5rem !important;
+}
+
+.owl-product button.owl-prev {
+    position: absolute;
+    left: -2rem;
+    top: 45%;
+}
+
+.owl-product button.owl-next {
+    position: absolute;
+    right: -2rem;
+    top: 45%;
+}

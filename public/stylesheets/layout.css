@@ -1,0 +1,36 @@
+nav {
+    z-index: 900 !important;
+}
+
+a.navbar-brand {
+    color: white !important;
+    font-weight: normal;
+}
+
+.navbar-brand img {
+    padding-right: .5rem;
+}
+
+.smartphoto {
+    z-index: 2300 !important;
+}
+
+.auth_card {
+    margin-top: 7rem;
+}
+/* Admin */
+.logo-wrapper {
+    height: 11.5rem !important;
+}
+
+a.collapsible-header {
+    padding-left: 2.5rem;
+}
+
+table.table th, table.table td {
+    vertical-align: middle;
+}
+
+.table_category {
+    margin-bottom: 4rem;
+}

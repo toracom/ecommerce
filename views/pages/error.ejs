@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error</title>
+    <% include ../layouts/style.ejs %>
+    <style>
+        body {
+            background: #dedede;
+        }
+
+        .page-wrap {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrap d-flex flex-row align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <span class="display-1 d-block mb-3"><%= error.status %> <%= message %></span>
+                    <pre class="text-left"><%= error.stack %></pre>
+                    <a href="/" class="btn btn-primary btn-rounded">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
