@@ -15,4 +15,10 @@ router.get('/product', function(req, res, next) {
   });
 });
 
+router.get('/site_map', function(req, res, next) {
+  res.render('pages/site_map', { 
+    title: 'Site Map'
+  });
+});
+
 module.exports = router;
